@@ -1,0 +1,12 @@
+{
+  "author": "linterhub",
+  "name": "@linterhub/www",
+  "version": "0.0.0-development",
+  "description": "",
+  "homepage": "https://linterhub.com",
+  "license": "MIT",
+  "contributors": [],
+  "keywords": [],
+  "repository": "linterhub/www",
+  "bugs": "https://github.com/linterhub/www/issues"
+}
