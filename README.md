@@ -1,22 +1,46 @@
 # @linterhub/www
 
+========
+[![Build Status](https://travis-ci.org/linterhub/www.svg?branch=master)](https://travis-ci.org/linterhub/www)
+
 ## Table of Contents
 
-- [Background](#background)
-- [Install](#install)
-- [Usage](#usage)
-- [Maintainers](#maintainers)
-- [Contribute](#contribute)
-- [License](#license)
+- [Getting started](#Getting started)
+- [Development](#Development)
+- [Deployment](#Deployment)
+- [More](#More)
+- [License](#License)
 
-## Background
+## Getting started
 
-## Install
+Update submodule(s):
+```bash
+$ git submodule init
+$ git submodule update
+```
+## Development
 
-## Usage
+Nothing special, all sources are inside `src` folder.
 
-## Maintainers
+## Deployment
 
-## Contribute
+Install npm packages:
+```bash
+$ npm install
+```
+
+Build the page and copy all static files to `build` folder:
+```bash
+$ npm run-script build
+```
+
+That's it! Open `build/index.html` in browser to preview before deployment.
+The page itself is automatically build & deployed after any change in `master` branch.
+
+## More
+
+If you're interested how it built and works - more details in [INFO](INFO.md).
 
 ## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
