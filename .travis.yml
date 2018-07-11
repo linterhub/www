@@ -1,18 +1,10 @@
 language: node_js
 node_js: stable
-cache:
-  directories:
-    - node_modules
-install:
-  - npm install
-script:
-  - npm run-script build
-  - cd build
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  local-dir: build
-  on:
-    branch: master
-    target_branch: gh-pages
+install: npm install
+script: npm run build
+jobs:
+  include:
+    - stage: semantic release
+      if: branch = master AND type = push
+      node_js: stable
+      script: npm run semantic-release
