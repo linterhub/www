@@ -66,6 +66,7 @@
         "start": "node script/start.js",
         "stop": "node script/stop.js",
         "build": "node script/build.js",
+        "test": "node script/build.js",
         "semantic-release": "semantic-release"
     },
     "jest": {

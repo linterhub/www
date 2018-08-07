@@ -1,10 +1,12 @@
 language: node_js
 node_js: stable
 install: npm install
-script: npm run build
 
 jobs:
   include:
+    - stage: build
+      node_js: stable
+      script: npm run build
     - stage: semantic release
       if: branch = master AND type = push
       node_js: stable
