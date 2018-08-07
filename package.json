@@ -1,9 +1,16 @@
 {
+    "author": "linterhub <hi@linterhub.com>",
     "name": "@linterhub/www",
-    "private": true,
-    "version": "0.1.0",
+    "version": "0.0.0-development",
+    "description": "web ui for linterhub",
     "homepage": "https://linterhub.com",
-    "dependencies": {
+    "license": "MIT",
+    "contributors": [],
+    "repository": "linterhub/www",
+    "bugs": "https://github.com/linterhub/www/issues",
+    "devDependencies": {
+        "@semantic-release/changelog": "^2.1.1",
+        "@semantic-release/git": "^6.0.1",
         "autoprefixer": "7.1.6",
         "babel-core": "6.26.0",
         "babel-eslint": "7.2.3",
@@ -46,6 +53,7 @@
         "redux-act": "^1.7.4",
         "redux-actions": "^2.4.0",
         "redux-thunk": "^2.2.0",
+        "semantic-release": "^15.6.3",
         "style-loader": "0.19.0",
         "sw-precache-webpack-plugin": "0.11.4",
         "url-loader": "0.6.2",
@@ -57,7 +65,8 @@
     "scripts": {
         "start": "node script/start.js",
         "stop": "node script/stop.js",
-        "build": "node script/build.js"
+        "build": "node script/build.js",
+        "semantic-release": "semantic-release"
     },
     "jest": {
         "collectCoverageFrom": [
